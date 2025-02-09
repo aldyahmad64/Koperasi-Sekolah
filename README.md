@@ -1,66 +1,100 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://koperasi.hardiyanti.site" target="_blank"><img src="/storage/app/public/img/web/faficon.png" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Koperasi Sekolah
 
-## About Laravel
+## Deskripsi
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Koperasi Sekolah adalah aplikasi berbasis web yang dikembangkan menggunakan **Laravel 11** dan **Filament 3**. Aplikasi ini dirancang untuk mempermudah pengelolaan koperasi sekolah, mencakup pencatatan anggota, simpanan, pinjaman, angsuran, serta laporan keuangan koperasi dan anggota.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Fitur Utama
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 1. Manajemen Anggota
 
-## Learning Laravel
+-   Registrasi anggota koperasi.
+-   Pengelolaan data anggota (edit, hapus, lihat detail).
+-   Klasifikasi anggota berdasarkan status dan kategori tertentu.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 2. Simpanan
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   Pencatatan transaksi simpanan anggota.
+-   Cetak nota bukti simpanan.
+-   Laporan saldo simpanan per anggota.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 3. Pinjaman
 
-## Laravel Sponsors
+-   Pengajuan pinjaman oleh anggota.
+-   Persetujuan atau penolakan pinjaman.
+-   Cetak nota bukti pinjaman.
+-   Pencatatan jadwal angsuran otomatis.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 4. Angsuran
 
-### Premium Partners
+-   Pencatatan pembayaran angsuran pinjaman.
+-   Perhitungan bunga dan sisa pinjaman secara otomatis.
+-   Cetak nota bukti angsuran.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 5. Laporan Keuangan
 
-## Contributing
+-   Laporan SHU (Sisa Hasil Usaha) koperasi.
+-   Laporan SHU per anggota.
+-   Rekapitulasi transaksi simpanan dan pinjaman.
+-   Laporan kas dan neraca keuangan koperasi.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Teknologi yang Digunakan
 
-## Code of Conduct
+-   **Backend:** Laravel 11
+-   **Frontend:** Filament 3
+-   **Database:** MySQL / PostgreSQL
+-   **Autentikasi:** Laravel Sanctum
+-   **PDF Generator:** Laravel DomPDF / SnappyPDF
+-   **Chart & Laporan:** Laravel Excel, Chart.js
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Instalasi
 
-## Security Vulnerabilities
+1. Clone repository ini:
+    ```sh
+    git clone https://github.com/aldyahmad64/Koperasi-Sekolah.git
+    cd Koperasi-Sekolah
+    ```
+2. Install dependensi Laravel:
+    ```sh
+    composer install
+    ```
+3. Copy file `.env` dan konfigurasi database:
+    ```sh
+    cp .env.example .env
+    ```
+4. Generate key aplikasi:
+    ```sh
+    php artisan key:generate
+    ```
+5. Jalankan migrasi dan seeder:
+    ```sh
+    php artisan migrate --seed
+    ```
+6. Jalankan server aplikasi:
+    ```sh
+    php artisan serve
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Akun Default
 
-## License
+-   **Superadmin:**
+    -   Email: `superadmin@koperasi.com`
+    -   Password: `superadmin`
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Penggunaan
+
+1. **Login** sebagai admin untuk mengelola koperasi.
+2. Tambahkan anggota baru melalui menu **Manajemen Anggota**.
+3. Lakukan transaksi simpanan dan pinjaman melalui menu **Simpanan** dan **Pinjaman**.
+4. Kelola angsuran dan cetak nota pembayaran melalui menu **Angsuran**.
+5. Cek laporan keuangan melalui menu **Laporan**.
+
+## Lisensi
+
+Aplikasi ini dirilis di bawah lisensi **MIT**.
+
+---
+
+**Dibuat dengan menggunakan Laravel 11 & Filament 3**

@@ -1,4 +1,4 @@
-<p align="center"><a href="https://koperasi.hardiyanti.site" target="_blank"><img src="/storage/app/public/img/web/faficon.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://koperasi.hardiyanti.site" target="_blank"><img src="/public/storage/img/web/faficon.png" width="400" alt="Laravel Logo"></a></p>
 
 # Koperasi Sekolah
 
